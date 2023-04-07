@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Grandpa from './components/Grandpa/Grandpa';
 import Home from './components/Home/Home';
 import Main from './components/Layout/Main';
 import OrderReview from './components/OrderReview/OrderReview';
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "review",
         element: <OrderReview></OrderReview>
+      },
+      {
+        path: 'grandpa',
+        element: <Grandpa></Grandpa>,
       },
     ]
   },
